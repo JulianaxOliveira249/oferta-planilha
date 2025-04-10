@@ -33,6 +33,7 @@
 <link rel='dns-prefetch' href='//i1.wp.com' />
 <link rel='dns-prefetch' href='//i2.wp.com' />
 <link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//pixel.wp.com' />
 <link rel='dns-prefetch' href='//s.gravatar.com' />
 <link rel='dns-prefetch' href='//0.gravatar.com' />
 <link rel='dns-prefetch' href='//2.gravatar.com' />
@@ -1879,43 +1880,7 @@ html, body {
 					</div>
 		</section>
 				</div>
-		<!-- HFCM by 99 Robots - Snippet # 3: UTM PAGINA -->
-<script>
-    let prefix = ["https://go.frendz.com.br/", "https://packplanilhas.pro"];
-
-    function getParams() {
-        let t = "",
-            e = window.top.location.href,
-            r = new URL(e);
-        if (null != r) {
-            let a = r.searchParams.get("utm_source"),
-                n = r.searchParams.get("utm_medium"),
-                o = r.searchParams.get("utm_campaign"),
-                m = r.searchParams.get("utm_term"),
-                c = r.searchParams.get("utm_content");
-            -1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t);
-        }
-        return t;
-    }
-
-    ! function() {
-        var t = new URLSearchParams(window.location.search);
-        t.toString() && document.querySelectorAll("a").forEach(function(e) {
-            let paramsToAdd = getParams();
-            for (let r = 0; r < prefix.length; r++) {
-                if (-1 !== e.href.indexOf(prefix[r])) {
-                    if (-1 === e.href.indexOf("?")) {
-                        e.href += "?" + t.toString() + paramsToAdd;
-                    } else {
-                        e.href += "&" + t.toString() + paramsToAdd;
-                    }
-                }
-            }
-        });
-    }();
-    console.log('%cScript de rastreamento de vendas desenvolvido pela Comunidade NOD - Dericson Calari e Samuel Choairy', 'font-size:20px;color:yellow;');
-</script>
-<!-- /end HFCM by 99 Robots -->
+		
 			<script type='text/javascript'>
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
